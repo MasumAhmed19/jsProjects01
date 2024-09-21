@@ -44,8 +44,10 @@ document.querySelector("#center").addEventListener("mousemove",
         // Less Repetition Code
         var div = document.createElement("div")
         div.classList.add('imgDiv')
+
         div.style.left = dets.clientX + 'px'
         div.style.top = dets.clientY + 'px'
+
         document.body.appendChild(div)
 
 
@@ -59,13 +61,13 @@ document.querySelector("#center").addEventListener("mousemove",
         gsap.to(img, {
             y: "0",
             ease: Power1,
-            duration: 0.6
+            duration: 0.7
         })
 
         // 
         gsap.to(img, {
             y: "100%",
-            delay: 0.6,   
+            delay: 0.7,   
             ease: Power1,
             duration: 0.2
         })
