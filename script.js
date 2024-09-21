@@ -53,7 +53,7 @@ document.querySelector("#center").addEventListener("mousemove",
 
         var img = document.createElement("img")
         // img.setAttribute("key": "value")
-        img.setAttribute("src", imgarr[Math.floor(Math.random() * 22)])
+        img.setAttribute("src", imgarr[Math.floor(Math.random() * 21)])
 
         div.appendChild(img)
 
@@ -77,7 +77,7 @@ document.querySelector("#center").addEventListener("mousemove",
             div.remove()
         }, 1000)
 
-    }, 250));
+    }, 200));
 
 
 // // Less Repetition Code
