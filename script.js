@@ -38,6 +38,16 @@ const imgarr = [
     "images/img22.webp",
 ]
 
+// Function to preload images (does not alter how images are displayed)
+const preloadImages = (imageArray) => {
+    imageArray.forEach(src => {
+        const img = new Image();
+        img.src = src;  // Preloads image into the browser's cache
+    });
+}
+
+// Preload all images (no need to store them, just load them into cache)
+preloadImages(imgarr);
 
 document.querySelector("#center").addEventListener("mousemove",
     throttleFunction((dets) => {
